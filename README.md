@@ -1,6 +1,6 @@
 # Prueba frontend
 
-En Zeroq, buscamos un desarrollador frontend semi-senior con experiencia en Next.js, Tailwind CSS y ReactJS . Este desafío evaluará habilidades clave en el desarrollo frontend moderno, incluyendo el manejo de APIs, el diseño responsive y la implementación de funcionalidades interactivas.
+En Zeroq, buscamos un desarrollador frontend con experiencia en Next.js, Tailwind CSS y ReactJS . Este desafío evaluará habilidades clave en el desarrollo frontend moderno, incluyendo el manejo de APIs, el diseño responsive y la implementación de funcionalidades interactivas.
 
 ## Restricciones 👀
 
