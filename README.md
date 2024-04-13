@@ -44,11 +44,13 @@ Tambien dejaremos al final del documento un JSON Para que puedas servir con la A
 
 ## Assets:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/eee47471-a3fa-47ae-943b-9247e2a139ef/c122e6ff-11a3-4562-a857-bc1f906b2027/Untitled.png)
+![image](https://github.com/Orliluq/zeroq-prueba/assets/122529721/7722a288-82e9-4856-ac3b-b74233304957)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/eee47471-a3fa-47ae-943b-9247e2a139ef/fe4c8d1e-1278-4d65-84cb-d846bbc032ca/Untitled.png)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/eee47471-a3fa-47ae-943b-9247e2a139ef/cc0e00fb-703f-46ef-8f78-746edfac4883/Untitled.png)
+![image](https://github.com/Orliluq/zeroq-prueba/assets/122529721/dc16a5ae-39b6-4e9f-8084-f393924638e6)
+
+![image](https://github.com/Orliluq/zeroq-prueba/assets/122529721/aa282b67-b9f7-45d2-afa0-1e30e0017418)
+
 
 
 ## Instalación
