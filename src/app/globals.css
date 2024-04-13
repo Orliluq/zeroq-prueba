@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainBlue: #1B2F55;
+  --secondaryBlue: #2B4F81;
+  --mainGreen: #00B989;
+  --mainWhite: #EEEEEE;
+  --secondaryWhite: #E2E2E2;
+  --mainGray: #8B8B8B;
+
+  --maxWidthSize: 1200px;
+}
+body {
+  background-color: var(--mainBlue);
+}
+body, h1{
+  margin: 0px;
+  
+}
+
+.card {
+  justify-content: items-start;
+  padding: 10px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, #2B4F81 65%, #00B989 35%);
+}
+
+.card {
+  @apply p-4 bg-white rounded-md shadow-md transition duration-200;
+}
+
+.card:hover {
+  @apply shadow-lg;
+}
+
+
+.search-bar {
+  display: flex; 
+  justify-content: flex-start; 
+  background-color: #2B4F81;
+  width: 100%;
+}
+
+.search-input-container {
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+}
+
+.search-icon {
+  width: 22px;
+  height: 20px;
+  color: #999; 
+}
+
+.search-input {
+  width: 35%; 
+}
