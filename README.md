@@ -76,4 +76,4 @@ Ganchos de reacción: https://reactjs.org/docs/hooks-reference.html
 Este proyecto está licenciado bajo la licencia MIT: https://choosealicense.com/licenses/mit/.
 
 
-![Mockup](mockup.png)# zeroq-prueba
+![Mockup](mockup.png)
