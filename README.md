@@ -76,4 +76,6 @@ Ganchos de reacción: https://reactjs.org/docs/hooks-reference.html
 Este proyecto está licenciado bajo la licencia MIT: https://choosealicense.com/licenses/mit/.
 
 
-![Mockup](mockup.png)
+![alt text](image-1.png)
+
+![alt text](image-2.png)

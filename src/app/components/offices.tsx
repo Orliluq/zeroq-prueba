@@ -1,9 +1,9 @@
 "use client";
 import { useState } from 'react';
-import { Office } from './types/index';
-import { useOfficesApi } from './hooks/useOfficesApi';
 import { OfficeCard } from '../components/offices/officeCard';
+import { useOfficesApi } from './hooks/useOfficesApi';
 import { Search } from './search';
+import { Office } from './types/index';
 
 export const Offices = () => {
   const { offices, toggleOfficeStatus } = useOfficesApi();
@@ -11,7 +11,7 @@ export const Offices = () => {
 
   const handleChangeSearch = (value: string) => {
     setSearch(value);
-  };
+};
 
   const filterOffices = (office: Office) =>
     office.name.toLowerCase().includes(search.trim().toLowerCase());
