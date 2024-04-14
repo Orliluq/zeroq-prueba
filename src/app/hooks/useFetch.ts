@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3000';
+/* const BASE_URL = 'http://localhost:3000'; */
+const BASE_URL = 'https://zeroq-prueba.vercel.app';
 
 export const useFetcher = () => {
   const fetcher = async <T>(url: string): Promise<T> => {
