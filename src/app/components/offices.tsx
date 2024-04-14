@@ -5,7 +5,6 @@ import { useOfficesApi } from './hooks/useOfficesApi';
 import { OfficeCard } from '../components/offices/officeCard';
 import { Search } from './search';
 
-
 export const Offices = () => {
   const { offices, toggleOfficeStatus } = useOfficesApi();
   const [search, setSearch] = useState('');
@@ -19,17 +18,23 @@ export const Offices = () => {
 
   return (
     <>
-      <Search search={search} onChange={handleChangeSearch} office={undefined}
-      onClick={function (id: number): void {
-        throw new Error('Function not implemented.');
-      } } id={0} />
+      <Search
+        search={search}
+        onChange={handleChangeSearch}
+        office={{ ...offices[0], className: '' }}
+        id={0}
+        onClick={() => { /* Empty handler if needed */ }} 
+      />
       <div className="flex-wrap grid grid-cols-1 md:grid-cols-4 grid-cols-auto gap-4 mx-auto">
         {offices.filter(filterOffices).map((office) => (
-          <OfficeCard key={office.id} office={office}
-            onClick={toggleOfficeStatus} search={''}
-            onChange={function (value: string): void {
-            throw new Error('Function not implemented.');
-          } } id={0} />
+          <OfficeCard
+            key={office.id}
+            office={office}
+            onClick={() => toggleOfficeStatus(office.id)}
+            search={''}
+            id={office.id} 
+            onChange={() => { /* Handle search change if needed */ }} 
+          />
         ))}
       </div>
     </>

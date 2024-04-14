@@ -8,12 +8,13 @@ export interface Office {
   name: string;
   online: boolean;
   lines: OfficeLine[];
+  className?: string;
 }
 
 export interface OfficesResponse {
   status(arg0: string, status: any): unknown;
   ok: any;
-  offices: Office[]
+  offices: Office[];
 }
 
 export interface Props {
@@ -21,8 +22,7 @@ export interface Props {
   search: string;
   onChange: (value: string) => void;
   office?: Office;
-  onClick: (id: number) => void;
-  className: string;
+  onClick?: (office: Office | number) => void;  
 }
 
 export type UseFetchReturnType<T> = {
@@ -33,12 +33,12 @@ export type UseFetchReturnType<T> = {
 };
 
 export interface Response<T> {
-  json(): Promise<T>
+  json(): Promise<T>;
 }
 
 export type OfficeListProps = {
   offices: Office[];
-  onClick: (id: number) => void;
+  onClick: (id: number) => void; 
 };
 
 export interface OfficeItemProps {

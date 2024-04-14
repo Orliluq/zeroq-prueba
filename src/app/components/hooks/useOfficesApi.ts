@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import { useFetcher } from '../../hooks/useFetch';
 import { Office, OfficesResponse } from '../types/index';
@@ -13,6 +14,7 @@ export const useOfficesApi = () => {
     setOffices(updatedOffices);
   };
 
+ 
   const getOffices = async () => {
     try {
       const officesResponse = await fetcher<OfficesResponse>('/api/offices');
@@ -22,20 +24,16 @@ export const useOfficesApi = () => {
     }
   };
 
-// eslint-disable-next-line react-hooks/exhaustive-deps
-useEffect(() => {
-  const fetchOffices = async () => {
-    await getOffices();
-  };
+  useEffect(() => {
+    const fetchOffices = async () => {
+      await getOffices();
+    };
 
-  fetchOffices();
+    fetchOffices();
 
-  const intervalId = setInterval(fetchOffices, 60000);
-
-  return () => {
-    clearInterval(intervalId);
-  };
-}, [fetcher]);
+    const intervalId = setInterval(fetchOffices, 60000);
+    return () => clearInterval(intervalId);
+  }, [fetcher, getOffices]);
 
 
   return {

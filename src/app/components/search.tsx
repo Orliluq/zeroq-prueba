@@ -1,7 +1,12 @@
+import React, { FC } from 'react';
 import { SearchIcon } from './icons/searchIcon';
-import { Props } from './types';
+import { Props } from './types'; 
 
-export const Search: React.FC<Props> = ({ search, onChange, office, onClick }) => {
+export const Search: FC<Props & { onClick?: (event: React.MouseEvent<HTMLDivElement>) => void }> = ({
+  search,
+  onChange,
+  onClick, 
+}) => {
   return (
     <div className="search-bar bg-blue-gray-700 py-2 px-4 rounded-1 mb-4 flex justify-between items-center">
       <div className="search-input-container flex items-center">
